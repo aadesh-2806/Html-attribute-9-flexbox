@@ -1,0 +1,24 @@
+section {
+    width: 90%;
+    height: 200px;
+    background-color: rgb(2, 2, 34);
+    margin: 0 auto;
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div {
+    width: 100px;
+   height: 100px;
+    flex-basis: 200px;          /*define ratio of element  ==  flex: 10px or 10% or min-content;*/
+}
+div:nth-of-type(1)
+{
+    /*flex-grow: 1;              /*  expand to fill space   ==  flex: 1; */
+    flex-shrink: 2;                /*shrink and fill space*/
+    /*flex: 1 30px;                  grow basis
+    flex: 1 1;                     grow shrink
+    flex: 1 1 30px;                grow shrink basis */
+}
